@@ -1,0 +1,169 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins to ensure 1-page fit
+\addtolength{\oddsidemargin}{-0.60in}
+\addtolength{\evensidemargin}{-0.60in}
+\addtolength{\textwidth}{1.20in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.30in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{2pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Ayush Sanger} \\ \vspace{2pt}
+    \small Noida, Uttar Pradesh, India $|$
+    \href{mailto:sangerforbusiness@gmail.com}{\underline{sangerforbusiness@gmail.com}} $|$
+    +91-8505875016 $|$
+    \href{https://linkedin.com/in/ayushsanger}{\underline{linkedin.com/in/ayushsanger}} $|$
+    \href{https://github.com/SangerForCode}{\underline{github.com/SangerForCode}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {BITS Pilani, Goa Campus}{Goa, India}
+      {B.E. (Hons.) Mathematics and Computing \& M.Sc. Chemistry}{Aug. 2023 -- Aug. 2028}
+    \resumeSubheading
+      {Cambridge School, Noida}{Noida, India}
+      {Class XII (CBSE) --- 93\%}{2022}
+\resumeSubHeadingListEnd
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Java, JavaScript, TypeScript, SQL} \\
+     \textbf{Backend}{: Django, FastAPI, Flask, PostgreSQL, REST APIs} \\
+     \textbf{Frontend}{: React, Next.js, React Native, Expo, HTML, CSS} \\
+    \textbf{Cloud \& DevOps}{: AWS, Cloudflare, Firebase, Supabase, Linux, Git, Docker, Kubernetes} \\
+     \textbf{Libraries \& Tools}{: NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow, Shoonya API,MATLAB}
+    }}
+\end{itemize}
+\section{Leadership \& Awards}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Founder \& Chief Coordinator --- BITS Goa Sports Club (BGSC)}{Jun. 2025 -- Apr. 2026}
+      {BITS Pilani, Goa Campus}{}
+      \resumeItemListStart
+        \resumeItem{Founded and led the campus sports ecosystem comprising \textbf{9 clubs} and \textbf{200+ committee members}.}
+        \resumeItem{Executed \textbf{80+ events} while securing \textbf{INR 4 Lakh} in sponsorships and engaging \textbf{2,900+ participants}.}
+        \resumeItem{Generated \textbf{300K+} social media impressions through digital campaigns.}
+      \resumeItemListEnd
+
+    
+\resumeSubHeadingListEnd
+
+
+
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Web Development Intern}{May 2025 -- July 2025}
+      {Samvardhan Greenfields}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained production web applications using \textbf{HTML, CSS, and JavaScript}.}
+        \resumeItem{Implemented website updates and API integrations supporting iterative product improvements.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{SWD Store BITS Pilani} $|$ \emph{Django, PostgreSQL, AWS, React}}{\href{https://swdstore.bits-pilani.ac.in}{\underline{swdstore.bits-pilani.ac.in}}}
+      \resumeItemListStart
+        \resumeItem{Co-founded an officially adopted marketplace across \textbf{4 BITS campuses} serving \textbf{8,600+ users} and processing \textbf{300,000 requests} every 12 days.}
+        \resumeItem{Deployed on \textbf{AWS} with Google OAuth, session-based authentication, and institutional email verification.}
+        \resumeItem{Designed transaction-safe checkout workflows and asynchronous notification workers for marketplace events.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{SyncQ Events} $|$ \emph{Next.js, PostgreSQL, Cloudflare}}{\href{https://syncqtech.com}{\underline{syncqtech.com}}}
+      \resumeItemListStart
+        \resumeItem{Building a scalable event platform supporting registrations, schedules, \textbf{QR check-ins}, networking, and announcements.}
+        \resumeItem{Designed a \textbf{PostgreSQL} backend with \textbf{Next.js} and \textbf{Cloudflare} supporting RBAC and scalable event workflows.}
+        \resumeItem{Developing an availability engine to reduce scheduling conflicts across clubs and volunteers.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Algorithmic Trading Bot \& Backtesting Engine} $|$ \emph{Python, Shoonya API, Options Trading}}{}
+      \resumeItemListStart
+        \resumeItem{Built an event-driven options trading engine integrated with the \textbf{Shoonya API}.}
+        \resumeItem{Backtested strategies on \textbf{5 years} of historical data using volume, trend, and stop-loss signals.}
+        \resumeItem{Implemented modular risk management and automated order execution.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{AI-Powered Health Tracking Mobile App} $|$ \emph{React Native, Expo, TypeScript}}{}
+      \resumeItemListStart
+        \resumeItem{Built a cross-platform health monitoring application using \textbf{React Native} and \textbf{Expo}.}
+        \resumeItem{Developed an AI assistant analyzing \textbf{3 months} of blood-pressure history and contextual health data to identify trends and trigger caregiver alerts.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Awards}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Mantra Award Winner --- Social Leadership 2025--26}{2026}
+      {BITS Pilani}{}
+      \resumeItemListStart
+        \resumeItem{Sole recipient of the 2025--26 Social Leadership Mantra Award, recognizing campus-wide impact through BGSC; one of only \textbf{204 recipients} since 2009.}
+      \resumeItemListEnd
+
+
+\end{document}
+```[cite: 7]
