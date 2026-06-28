@@ -1,4 +1,4 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,9pt]{extarticle}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -78,21 +78,29 @@
 
 \section{Education}
 \resumeSubHeadingListStart
-    \resumeSubheading
-      {BITS Pilani, Goa Campus}{Goa, India}
-      {B.E. (Hons.) Mathematics and Computing \& M.Sc. Chemistry}{Aug. 2023 -- Aug. 2028}
-    \resumeSubheading
-      {Cambridge School, Noida}{Noida, India}
-      {Class XII (CBSE) --- 93\%}{2022}
+
+\resumeSubheading
+{BITS Pilani, Goa Campus}{Goa, India}
+{B.E. (Hons.) Mathematics and Computing \& M.Sc. Chemistry \hfill \textbf{CGPA: 8.04}}{Aug. 2023 -- Aug. 2028}
+
+\resumeSubheading
+{Cambridge School}{Noida, India}
+{CBSE (Class XII): \textbf{93.0\%} \;|\; CBSE (Class X): \textbf{95.2\%}}{2020 -- 2022}
+
+
+
+\resumeSubHeadingListEnd
 \resumeSubHeadingListEnd
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C++, Java, JavaScript, TypeScript, SQL} \\
-     \textbf{Backend}{: Django, FastAPI, Flask, PostgreSQL, REST APIs} \\
-     \textbf{Frontend}{: React, Next.js, React Native, Expo, HTML, CSS} \\
-    \textbf{Cloud \& DevOps}{: AWS, Cloudflare, Firebase, Supabase, Linux, Git, Docker, Kubernetes} \\
-     \textbf{Libraries \& Tools}{: NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow, Shoonya API,MATLAB}
+     \textbf{Languages}{: Python, C++, JavaScript, TypeScript, SQL} \\
+     \textbf{Core CS}{: Data Structures \& Algorithms, OOP, DBMS, System Design Fundamentals,Linear Algebra,Numerical Optimization} \\
+     \textbf{Backend}{: Django, FastAPI, Flask, REST APIs, PostgreSQL, Authentication, RBAC, Background Jobs, API Integrations} \\
+     \textbf{Frontend}{: React, Next.js, React Native, Expo, Tailwind CSS, HTML, CSS} \\
+    \textbf{Cloud \& DevOps}{: AWS, Cloudflare, Docker, Linux, Git, GitHub Actions, CI/CD} \\
+     \textbf{Data/ML}{: NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib, Time-Series Analysis} \\
+     \textbf{Tools}{: Postman, Firebase, Supabase, MATLAB, Shoonya API}
     }}
 \end{itemize}
 \section{Leadership \& Awards}
@@ -109,56 +117,81 @@
     
 \resumeSubHeadingListEnd
 
-
-
 \section{Experience}
+
 \resumeSubHeadingListStart
-    \resumeSubheading
-      {Web Development Intern}{May 2025 -- July 2025}
-      {Samvardhan Greenfields}{Remote}
-      \resumeItemListStart
-        \resumeItem{Developed and maintained production web applications using \textbf{HTML, CSS, and JavaScript}.}
-        \resumeItem{Implemented website updates and API integrations supporting iterative product improvements.}
-      \resumeItemListEnd
+
+
+
+\resumeSubheading
+{Software Development Intern}{May 2026 -- Jul. 2026}
+{Finoux}{Remote}
+\resumeItemListStart
+    \resumeItem{Improved API response time by \textbf{24\%} by optimizing \textbf{PostgreSQL} queries and simplifying database operations for backend services.}
+    \resumeItem{Improved backend performance by \textbf{15\%} by refactoring existing code and resolving performance bottlenecks while maintaining \textbf{99.9\%} system availability.}
+\resumeItemListEnd
+
+
+
+
+
+
+\resumeSubheading
+{Web Development Intern}{May 2025 -- Jul. 2025}
+{Samvardhan Greenfields}{Remote}
+\resumeItemListStart
+\resumeItem{Built and deployed a lead management system on \textbf{AWS EC2} using \textbf{Amazon RDS (MySQL)} to automate customer enquiry handling and meeting scheduling.}
+\resumeItem{Designed relational database schemas and implemented role-based workflows for sales operations, increasing qualified monthly customer contacts and scheduled sales calls by \textbf{78 \%}.}
+
+
+\resumeItemListEnd
+
+
+
+
+
 \resumeSubHeadingListEnd
+
 
 \section{Projects}
 \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{SWD Store BITS Pilani} $|$ \emph{Django, PostgreSQL, AWS, React}}{\href{https://swdstore.bits-pilani.ac.in}{\underline{swdstore.bits-pilani.ac.in}}}
+      {\textbf{SWD Store BITS Pilani} $|$ \emph{Django, PostgreSQL, AWS, React}}{\href{https://swdstore.bits-pilani.ac.in}{{swdstore.bits-pilani.ac.in}}}
       \resumeItemListStart
-        \resumeItem{Co-founded an officially adopted marketplace across \textbf{4 BITS campuses} serving \textbf{8,600+ users} and processing \textbf{300,000 requests} every 12 days.}
-        \resumeItem{Deployed on \textbf{AWS} with Google OAuth, session-based authentication, and institutional email verification.}
-        \resumeItem{Designed transaction-safe checkout workflows and asynchronous notification workers for marketplace events.}
+        \resumeItem{Co-founded an officially adopted inter-campus marketplace serving \textbf{8,600+ users} across \textbf{4 BITS campuses} and processing \textbf{300,000 requests} every 12 days.}
+        \resumeItem{Built \textbf{Google OAuth}, session authentication, institutional email verification, and role-based access controls for verified student transactions.}
+        \resumeItem{Designed transaction-safe checkout and order-state workflows using \textbf{PostgreSQL} constraints and transactions to prevent inconsistent marketplace events.}
+        \resumeItem{Implemented asynchronous notification workers for listing, checkout, and status-update events; deployed and maintained the platform on {AWS}.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{SyncQ Events} $|$ \emph{Next.js, PostgreSQL, Cloudflare}}{\href{https://syncqtech.com}{{syncqtech.com}}}
+      \resumeItemListStart
+        \resumeItem{Building a scalable event-management platform for registrations, schedules, \textbf{QR check-ins}, networking, announcements, and organizer workflows.}
+        \resumeItem{Designed \textbf{PostgreSQL} schemas and API workflows for events, users, roles, check-ins, volunteer availability, and announcements.}
+        \resumeItem{Implemented \textbf{RBAC}-backed organizer workflows and \textbf{Cloudflare}-backed deployment for reliable event operations.}
+        \resumeItem{Developing an availability engine to reduce scheduling conflicts across clubs, volunteers, venues, and event time slots.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{SyncQ Events} $|$ \emph{Next.js, PostgreSQL, Cloudflare}}{\href{https://syncqtech.com}{\underline{syncqtech.com}}}
+      {\textbf{Algorithmic Trading Bot \& Backtesting Engine} $|$ \emph{Python, Shoonya API}}{June. 2025--July 2025}
       \resumeItemListStart
-        \resumeItem{Building a scalable event platform supporting registrations, schedules, \textbf{QR check-ins}, networking, and announcements.}
-        \resumeItem{Designed a \textbf{PostgreSQL} backend with \textbf{Next.js} and \textbf{Cloudflare} supporting RBAC and scalable event workflows.}
-        \resumeItem{Developing an availability engine to reduce scheduling conflicts across clubs and volunteers.}
+        \resumeItem{Built an event-driven options trading engine with modular strategy, broker, execution, and risk-management layers.}
+        \resumeItem{Backtested strategies on \textbf{5 years} of historical data using trend, volume, stop-loss, and position-sizing rules.}
+        \resumeItem{Implemented automated order execution with configurable risk limits, trade logging, and failure handling.}
       \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Algorithmic Trading Bot \& Backtesting Engine} $|$ \emph{Python, Shoonya API, Options Trading}}{}
-      \resumeItemListStart
-        \resumeItem{Built an event-driven options trading engine integrated with the \textbf{Shoonya API}.}
-        \resumeItem{Backtested strategies on \textbf{5 years} of historical data using volume, trend, and stop-loss signals.}
-        \resumeItem{Implemented modular risk management and automated order execution.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{AI-Powered Health Tracking Mobile App} $|$ \emph{React Native, Expo, TypeScript}}{}
-      \resumeItemListStart
-        \resumeItem{Built a cross-platform health monitoring application using \textbf{React Native} and \textbf{Expo}.}
-        \resumeItem{Developed an AI assistant analyzing \textbf{3 months} of blood-pressure history and contextual health data to identify trends and trigger caregiver alerts.}
-      \resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{Behavioral Fitness Analytics Platform} $|$ \emph{Python, Streamlit, PostgreSQL, Linear Regression}}{March. 2025-May. 2026}
+  \resumeItemListStart
+    \resumeItem{Engineered a high-performance analytics platform using \textbf{Python} and \textbf{Streamlit} to process and visualize real-time fitness data across multiple workout modalities.}
+    \resumeItem{Implemented a predictive weight-tracking engine using \textbf{Linear Regression} to forecast goal attainment dates by \textbf{statistical trend analysis}.}
+    \resumeItem{Designed a normalized \textbf{PostgreSQL} database schema for multi-dimensional fitness telemetry and integrated A/B testing logic to evaluate feature performance and user engagement.}
+  \resumeItemListEnd
 \resumeSubHeadingListEnd
 \section{Awards}
 \resumeSubHeadingListStart
     \resumeSubheading
-      {Mantra Award Winner --- Social Leadership 2025--26}{2026}
+      {Mantra Award Winner --- Social Leadership 2025--26}{July. 2026}
       {BITS Pilani}{}
       \resumeItemListStart
         \resumeItem{Sole recipient of the 2025--26 Social Leadership Mantra Award, recognizing campus-wide impact through BGSC; one of only \textbf{204 recipients} since 2009.}
